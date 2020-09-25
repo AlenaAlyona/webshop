@@ -13,6 +13,16 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      description: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: false,
+      },
+      price: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        unique: false,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

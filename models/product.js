@@ -18,6 +18,8 @@ module.exports = (sequelize, DataTypes) => {
   product.init(
     {
       name: { type: DataTypes.STRING, allowNull: false, unique: true },
+      description: { type: DataTypes.STRING, allowNull: false, unique: false },
+      price: { type: DataTypes.INTEGER, allowNull: false, unique: false },
     },
     {
       sequelize,
