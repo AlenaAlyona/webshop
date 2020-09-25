@@ -1,8 +1,10 @@
+const cors = require("cors");
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 4000;
 const jsonParser = express.json();
 
+app.use(cors());
 app.use(jsonParser);
 
 const userRouter = require("./routers/user");
